@@ -100,7 +100,7 @@ export default function ContactSection() {
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Call Me</h3>
               <p className="text-gray-600 mb-4">Available for calls Sunday through Friday, 9am - 9pm </p>
-              <a href="tel:+11234567890" className="text-primary hover:underline font-medium">
+              <a href="+9779767384214" className="text-primary hover:underline font-medium">
                 +977 9767384214
               </a>
             </div>
