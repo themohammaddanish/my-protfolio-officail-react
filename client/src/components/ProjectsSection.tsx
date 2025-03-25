@@ -5,7 +5,7 @@ export default function ProjectsSection() {
       description: "A comprehensive UI/UX design for a modern Nike shoe Showcase with a focus on elegent design.",
       image: "https://i.postimg.cc/25Bkmh0r/project-5.png",
       featured: true,
-      demoUrl: "#",
+      demoUrl: "https://www.figma.com/proto/JShx6o6SXtONgmj4jIWcvv/project-5?node-id=0-1&t=qIGpfOXHGX90NUJa-1",
       codeUrl: "#",
       tags: [
         { name: "Figma", color: "blue" },
