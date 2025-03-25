@@ -1,9 +1,9 @@
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "E-commerce App UI",
-      description: "A comprehensive UI/UX design for a modern e-commerce platform with a focus on mobile experience.",
-      image: "https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      title: "Nike Shoe Showcase",
+      description: "A comprehensive UI/UX design for a modern Nike shoe Showcase with a focus on elegent design.",
+      image: "https://i.postimg.cc/25Bkmh0r/project-5.png",
       featured: true,
       demoUrl: "#",
       codeUrl: "#",
