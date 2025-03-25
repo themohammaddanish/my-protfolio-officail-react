@@ -223,7 +223,7 @@ export default function ProjectsSection() {
           {/* Call to action */}
           <div className="mt-16 text-center">
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/themohammaddanish" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-flex items-center px-6 py-3 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-colors"
