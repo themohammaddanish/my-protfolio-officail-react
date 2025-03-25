@@ -14,22 +14,22 @@ export default function ProjectsSection() {
       ]
     },
     {
-      title: "Finance Dashboard",
-      description: "A responsive web application for financial management with data visualization and real-time updates.",
-      image: "https://images.unsplash.com/photo-1559028012-481c04fa702d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      title: "E-Bike Dashboard",
+      description: "A comprehensive UI/UX design for a modern E-Bike Dashboard.",
+      image: "https://i.postimg.cc/13FR1DCP/project-three-logic-tech.png",
       featured: true,
       demoUrl: "#",
       codeUrl: "#",
       tags: [
-        { name: "React", color: "green" },
-        { name: "Node.js", color: "green" },
-        { name: "D3.js", color: "green" }
+        { name: "Figma", color: "green" },
+        { name: "UI Design", color: "green" },
+        { name: "Research", color: "green" }
       ]
     },
     {
       title: "Travel App",
       description: "A travel planning application with interactive maps, itinerary building, and social sharing features.",
-      image: "https://images.unsplash.com/photo-1545235617-7a424c1a60cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "https://i.postimg.cc/wxNwJvGM/project-6.png",
       featured: false,
       demoUrl: "#",
       codeUrl: "#",
@@ -42,7 +42,7 @@ export default function ProjectsSection() {
     {
       title: "Healthcare Portal",
       description: "A secure patient management system with appointment scheduling and medical record keeping.",
-      image: "https://images.unsplash.com/photo-1550439062-609e1531270e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "https://i.postimg.cc/9XNc4LsC/Project-one.png",
       featured: false,
       demoUrl: "#",
       codeUrl: "#",
@@ -55,7 +55,7 @@ export default function ProjectsSection() {
     {
       title: "Restaurant Delivery App",
       description: "A mobile app for food ordering and delivery with real-time order tracking and payment integration.",
-      image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "https://i.postimg.cc/Hk0GtzvJ/PROJECT-TWO.png",
       featured: false,
       demoUrl: "#",
       codeUrl: "#",
@@ -68,9 +68,9 @@ export default function ProjectsSection() {
     {
       title: "Social Media Platform",
       description: "A community platform for creative professionals with portfolio sharing and networking features.",
-      image: "https://images.unsplash.com/photo-1618788372246-79faff0c3742?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
+      image: "https://i.postimg.cc/05mqQ9Gd/Mac-Book-Pro-16-1.png",
       featured: false,
-      demoUrl: "#",
+      demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
       codeUrl: "#",
       tags: [
         { name: "React", color: "green" },
