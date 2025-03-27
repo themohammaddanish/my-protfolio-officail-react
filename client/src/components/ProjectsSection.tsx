@@ -13,6 +13,19 @@ export default function ProjectsSection() {
         { name: "Research", color: "blue" }
       ]
     },
+     {
+      title: "Nike Shoe Showcase",
+      description: "A comprehensive UI/UX design for a modern Nike shoe Showcase with a focus on elegent design.",
+      image: "https://i.postimg.cc/25Bkmh0r/project-5.png",
+      featured: true,
+      demoUrl: "https://www.figma.com/proto/JShx6o6SXtONgmj4jIWcvv/project-5?node-id=0-1&t=qIGpfOXHGX90NUJa-1",
+      codeUrl: "#",
+      tags: [
+        { name: "Figma", color: "blue" },
+        { name: "UI Design", color: "blue" },
+        { name: "Research", color: "blue" }
+      ]
+    },
     {
       title: "E-Bike Dashboard",
       description: "A comprehensive UI/UX design for a modern E-Bike Dashboard.",
@@ -63,6 +76,33 @@ export default function ProjectsSection() {
         { name: "UI/UX", color: "blue" },
         { name: "Flutter", color: "orange" },
         { name: "Firebase", color: "green" }
+      ]
+    },
+    {
+      title: "Social Media Platform",
+      description: "A community platform for creative professionals with portfolio sharing and networking features.",
+      image: "https://i.postimg.cc/05mqQ9Gd/Mac-Book-Pro-16-1.png",
+      featured: false,
+      demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
+      codeUrl: "#",
+      tags: [
+        { name: "React", color: "green" },
+        { name: "GraphQL", color: "green" },
+        { name: "MongoDB", color: "green" }
+      ]
+    },
+
+    {
+      title: "Social Media Platform",
+      description: "A community platform for creative professionals with portfolio sharing and networking features.",
+      image: "https://i.postimg.cc/05mqQ9Gd/Mac-Book-Pro-16-1.png",
+      featured: false,
+      demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
+      codeUrl: "#",
+      tags: [
+        { name: "React", color: "green" },
+        { name: "GraphQL", color: "green" },
+        { name: "MongoDB", color: "green" }
       ]
     },
     {
