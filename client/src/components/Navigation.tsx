@@ -35,7 +35,7 @@ export default function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="text-primary font-bold text-xl tracking-tight">Danish<span className="text-accent">Khan</span></a>
+            <a href="#" className="text-primary font-bold text-xl tracking-tight">Danish<span className="text-black">Khan</span></a>
           </div>
           <nav className="hidden md:block">
             <ul className="flex space-x-8">
