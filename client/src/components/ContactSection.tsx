@@ -249,11 +249,11 @@ export default function ContactSection() {
                     <div className="space-y-4 text-white">
                       <p className="flex items-center">
                         <i className="fas fa-envelope-open-text mr-3 w-5 text-blue-300"></i>
-                        <a href="mailto:hello@example.com" className="hover:underline">mohameddaniss2@gmail.com</a>
+                        <a href="mohameddaniss2@gmail.com.com" className="hover:underline">mohameddaniss2@gmail.com</a>
                       </p>
                       <p className="flex items-center">
                         <i className="fas fa-phone mr-3 w-5 text-blue-300"></i>
-                        <a href="tel:+11234567890" className="hover:underline">+977 9767384214</a>
+                        <a href="tel:+9779767384214" className="hover:underline">+977 9767384214</a>
                       </p>
                       <p className="flex items-center">
                         <i className="fas fa-map-marker-alt mr-3 w-5 text-blue-300"></i>
@@ -272,14 +272,14 @@ export default function ContactSection() {
                       <a href="https://www.linkedin.com/in/md-danish-khan-76ab381b1/" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" aria-label="LinkedIn">
                         <i className="fab fa-linkedin-in"></i>
                       </a>
-                      <a href="#" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" aria-label="GitHub">
+                      <a href="https://github.com/themohammaddanish" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" aria-label="GitHub">
                         <i className="fab fa-github"></i>
                       </a>
-                      <a href="#" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" aria-label="Dribbble">
-                        <i className="fab fa-dribbble"></i>
+                      <a href="https://www.behance.net/daniskhan7" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" aria-label="Dribbble">
+                        <i className="fab fa-behance"></i>
                       </a>
-                      <a href="#" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" aria-label="Twitter">
-                        <i className="fab fa-twitter"></i>
+                      <a href="https://www.instagram.com/themohammaddanish/" className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-white/20 transition-colors" aria-label="Twitter">
+                        <i className="fab fa-instagram"></i>
                       </a>
                     </div>
                   </div>
