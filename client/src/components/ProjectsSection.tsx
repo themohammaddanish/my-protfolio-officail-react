@@ -36,11 +36,11 @@ export default function ProjectsSection() {
       tags: [
         { name: "Figma", color: "green" },
         { name: "UI Design", color: "green" },
-        { name: "Research", color: "green" }
+        { name: "Research", color: "blue" }
       ]
     },
     {
-      title: "Travel App",
+      title: "E-Bike Webpage",
       description: "A travel planning application with interactive maps, itinerary building, and social sharing features.",
       image: "https://i.postimg.cc/wxNwJvGM/project-6.png",
       featured: false,
@@ -147,7 +147,7 @@ export default function ProjectsSection() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
             <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              A selection of my recent work across UI/UX design and full-stack development.
+              A selection of my recent work across UI/UX design and development.
             </p>
           </div>
 
@@ -185,6 +185,7 @@ export default function ProjectsSection() {
                     <a 
                       href={project.demoUrl} 
                       className="inline-flex items-center px-4 py-2 bg-primary text-white font-medium rounded-lg hover:bg-blue-600 transition-colors"
+                      target="_blank"
                     >
                       Live Demo
                       <i className="fas fa-external-link-alt ml-2"></i>
@@ -192,9 +193,10 @@ export default function ProjectsSection() {
                     <a 
                       href={project.codeUrl} 
                       className="inline-flex items-center px-4 py-2 border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors"
+                      target="_blank"
                     >
-                      View Code
-                      <i className="fab fa-github ml-2"></i>
+                      Edit Design
+                      <i className="fab fa-figma ml-2"></i>
                     </a>
                   </div>
                 </div>
@@ -237,7 +239,7 @@ export default function ProjectsSection() {
                         className="rounded-full w-12 h-12 bg-white text-gray-700 flex items-center justify-center hover:bg-blue-50 transition-colors"
                         title="View Code"
                       >
-                        <i className="fab fa-github"></i>
+                        <i className="fab fa-figma"></i>
                       </a>
                     </div>
                   </div>
@@ -268,8 +270,8 @@ export default function ProjectsSection() {
               rel="noopener noreferrer" 
               className="inline-flex items-center px-6 py-3 rounded-full bg-gray-900 text-white hover:bg-gray-800 transition-colors"
             >
-              See more on GitHub
-              <i className="fab fa-github ml-2"></i>
+              See more Project
+              {/* <i className="fab fa-github ml-2"></i> */}
             </a>
           </div>
         </div>

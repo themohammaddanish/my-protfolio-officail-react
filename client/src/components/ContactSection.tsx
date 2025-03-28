@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ export default function ContactSection() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
@@ -53,17 +55,35 @@ export default function ContactSection() {
     if (validateForm()) {
       setIsSubmitting(true);
       
-      // Simulate form submission
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-        setFormData({ name: "", email: "", subject: "", message: "" });
-        
-        // Reset submission status after 3 seconds
-        setTimeout(() => {
-          setIsSubmitted(false);
-        }, 3000);
-      }, 1000);
+      // EmailJS configuration
+      const serviceId = "service_6fbufq8";
+      const templateId = "template_ntlufxn";
+      const publicKey = "mhtzaCOyoCfjB72N8";
+
+      // Prepare template parameters
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message
+      };
+
+      // Send email using EmailJS
+      emailjs.send(serviceId, templateId, templateParams, publicKey)
+        .then(() => {
+          setIsSubmitting(false);
+          setIsSubmitted(true);
+          setFormData({ name: "", email: "", subject: "", message: "" });
+          
+          // Reset submission status after 3 seconds
+          setTimeout(() => {
+            setIsSubmitted(false);
+          }, 3000);
+        })
+        .catch((error) => {
+          console.error("EmailJS Error:", error);
+          setIsSubmitting(false);
+        });
     }
   };
 
