@@ -10,28 +10,28 @@ export default function ProjectsSection() {
       tags: [
         { name: "Figma", color: "blue" },
         { name: "UI Design", color: "blue" },
-        { name: "Research", color: "blue" }
+        { name: "Research", color: "green" }
       ]
     },
      {
-      title: "Nike Shoe Showcase",
-      description: "A comprehensive UI/UX design for a modern Nike shoe Showcase with a focus on elegent design.",
-      image: "https://i.postimg.cc/25Bkmh0r/project-5.png",
+      title: "Website Analytic Web Design",
+      description: "A comprehensive UI/UX design for a modern web page with a focus on elegent design.",
+      image: "https://i.postimg.cc/NFfqs3sm/project-9.jpg",
       featured: true,
-      demoUrl: "https://www.figma.com/proto/JShx6o6SXtONgmj4jIWcvv/project-5?node-id=0-1&t=qIGpfOXHGX90NUJa-1",
+      demoUrl: "https://www.figma.com/proto/Wi1sm3c6aGS2VBNsraQ3rr/project-9?node-id=0-1&t=gMRLf9Rgec3LSIil-1",
       codeUrl: "#",
       tags: [
         { name: "Figma", color: "blue" },
         { name: "UI Design", color: "blue" },
-        { name: "Research", color: "blue" }
+        { name: "Research", color: "green" }
       ]
     },
     {
-      title: "E-Bike Dashboard",
-      description: "A comprehensive UI/UX design for a modern E-Bike Dashboard.",
+      title: "Logic Tech Mouse Showcase",
+      description: "A comprehensive UI/UX design for a modern LogicTech Dashboard.",
       image: "https://i.postimg.cc/13FR1DCP/project-three-logic-tech.png",
       featured: true,
-      demoUrl: "#",
+      demoUrl: "https://www.figma.com/proto/IvbPDo5hmvj7w4TLHXWxaN/project-three-logic-tech?node-id=0-1&t=gF6KgmSadLL9kFqo-1",
       codeUrl: "#",
       tags: [
         { name: "Figma", color: "green" },
