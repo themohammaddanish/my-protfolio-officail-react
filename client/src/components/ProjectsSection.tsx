@@ -28,7 +28,7 @@ export default function ProjectsSection() {
     },
     {
       title: "Logitech: Product Landing Page",
-      description: "A comprehensive UI/UX design for a modern LogicTech Dashboard.",
+      description: "A landing page design for the Logitech G502 X Plus gaming mouse, focusing on a modern aesthetic and effective product presentation.",
       image: "https://i.postimg.cc/13FR1DCP/project-three-logic-tech.png",
       featured: true,
       demoUrl: "https://www.figma.com/proto/IvbPDo5hmvj7w4TLHXWxaN/project-three-logic-tech?node-id=0-1&t=gF6KgmSadLL9kFqo-1",
