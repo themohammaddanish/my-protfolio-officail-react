@@ -2,7 +2,7 @@ export default function ProjectsSection() {
   const projects = [
     {
       title: "Nike Air Max Landing Page Concept",
-      description: "A conceptual landing page design for the Nike Air Max DN, emphasizing a clean, modern aesthetic and a strong visual hierarchy.",
+      description: "A conceptual landing page design for the Nike Air Max, emphasizing a clean, modern aesthetic and a strong visual hierarchy.",
       image: "https://i.postimg.cc/25Bkmh0r/project-5.png",
       featured: true,
       demoUrl: "https://www.figma.com/proto/JShx6o6SXtONgmj4jIWcvv/project-5?node-id=0-1&t=qIGpfOXHGX90NUJa-1",
