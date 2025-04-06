@@ -40,8 +40,8 @@ export default function ProjectsSection() {
       ]
     },
     {
-      title: "E-Bike Webpage",
-      description: "A travel planning application with interactive maps, itinerary building, and social sharing features.",
+      title: "EV-R Electric Scooter Landing Page",
+      description: "A modern and visually engaging landing page designed for the EV-R electric scooter brand. This responsive UI concept features a sleek and minimalist layout that highlights the scooter’s futuristic design and key specifications.",
       image: "https://i.postimg.cc/wxNwJvGM/project-6.png",
       featured: false,
       demoUrl: "#",
