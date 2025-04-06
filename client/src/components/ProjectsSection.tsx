@@ -41,7 +41,7 @@ export default function ProjectsSection() {
     },
     {
       title: "EV-R Electric Scooter Landing Page",
-      description: "A modern and visually engaging landing page designed for the EV-R electric scooter brand. This responsive UI concept features a sleek and minimalist layout that highlights the scooter’s futuristic design and key specifications.",
+      description: "A modern and visually engaging landing page designed for the EV-R electric scooter brand.",
       image: "https://i.postimg.cc/wxNwJvGM/project-6.png",
       featured: false,
       demoUrl: "#",
@@ -53,8 +53,8 @@ export default function ProjectsSection() {
       ]
     },
     {
-      title: "Healthcare Portal",
-      description: "A secure patient management system with appointment scheduling and medical record keeping.",
+      title: "Nike Air Max 90 Product Landing Page",
+      description: "A sleek and stylish landing page concept for the Nike Air Max 90 sneaker.",
       image: "https://i.postimg.cc/9XNc4LsC/Project-one.png",
       featured: false,
       demoUrl: "#",
@@ -66,8 +66,8 @@ export default function ProjectsSection() {
       ]
     },
     {
-      title: "Restaurant Delivery App",
-      description: "A mobile app for food ordering and delivery with real-time order tracking and payment integration.",
+      title: "DualSense Wireless Controller Product Page UI",
+      description: "A vibrant and modern product showcase page for the DualSense Wireless Controller.",
       image: "https://i.postimg.cc/Hk0GtzvJ/PROJECT-TWO.png",
       featured: false,
       demoUrl: "#",
@@ -79,8 +79,8 @@ export default function ProjectsSection() {
       ]
     },
     {
-      title: "Social Media Platform",
-      description: "A community platform for creative professionals with portfolio sharing and networking features.",
+      title: "Pizza Hut Website Redesign Concept",
+      description: "A conceptual redesign of the Pizza Hut website focusing on a clean, modern aesthetic and improved user experience.",
       image: "https://i.postimg.cc/05mqQ9Gd/Mac-Book-Pro-16-1.png",
       featured: false,
       demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
@@ -92,32 +92,32 @@ export default function ProjectsSection() {
       ]
     },
 
-    {
-      title: "Social Media Platform",
-      description: "A community platform for creative professionals with portfolio sharing and networking features.",
-      image: "https://i.postimg.cc/05mqQ9Gd/Mac-Book-Pro-16-1.png",
-      featured: false,
-      demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
-      codeUrl: "#",
-      tags: [
-        { name: "React", color: "green" },
-        { name: "GraphQL", color: "green" },
-        { name: "MongoDB", color: "green" }
-      ]
-    },
-    {
-      title: "Social Media Platform",
-      description: "A community platform for creative professionals with portfolio sharing and networking features.",
-      image: "https://i.postimg.cc/05mqQ9Gd/Mac-Book-Pro-16-1.png",
-      featured: false,
-      demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
-      codeUrl: "#",
-      tags: [
-        { name: "React", color: "green" },
-        { name: "GraphQL", color: "green" },
-        { name: "MongoDB", color: "green" }
-      ]
-    }
+    // {
+    //   title: "Social Media Platform",
+    //   description: "A community platform for creative professionals with portfolio sharing and networking features.",
+    //   image: "https://i.postimg.cc/05mqQ9Gd/Mac-Book-Pro-16-1.png",
+    //   featured: false,
+    //   demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
+    //   codeUrl: "#",
+    //   tags: [
+    //     { name: "React", color: "green" },
+    //     { name: "GraphQL", color: "green" },
+    //     { name: "MongoDB", color: "green" }
+    //   ]
+    // },
+    // {
+    //   title: "Social Media Platform",
+    //   description: "A community platform for creative professionals with portfolio sharing and networking features.",
+    //   image: "https://i.postimg.cc/05mqQ9Gd/Mac-Book-Pro-16-1.png",
+    //   featured: false,
+    //   demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
+    //   codeUrl: "#",
+    //   tags: [
+    //     { name: "React", color: "green" },
+    //     { name: "GraphQL", color: "green" },
+    //     { name: "MongoDB", color: "green" }
+    //   ]
+    // }
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
