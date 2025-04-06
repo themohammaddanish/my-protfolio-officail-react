@@ -1,8 +1,8 @@
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "Nike Shoe Showcase",
-      description: "A comprehensive UI/UX design for a modern Nike shoe Showcase with a focus on elegent design.",
+      title: "Nike Air Max Landing Page Concept",
+      description: "A conceptual landing page design for the Nike Air Max DN, emphasizing a clean, modern aesthetic and a strong visual hierarchy.",
       image: "https://i.postimg.cc/25Bkmh0r/project-5.png",
       featured: true,
       demoUrl: "https://www.figma.com/proto/JShx6o6SXtONgmj4jIWcvv/project-5?node-id=0-1&t=qIGpfOXHGX90NUJa-1",
@@ -47,9 +47,9 @@ export default function ProjectsSection() {
       demoUrl: "#",
       codeUrl: "#",
       tags: [
-        { name: "Vue.js", color: "violet" },
-        { name: "Firebase", color: "violet" },
-        { name: "Google Maps API", color: "violet" }
+        { name: "Figma", color: "green" },
+        { name: "UI Design", color: "green" },
+        { name: "Research", color: "blue" }
       ]
     },
     {
@@ -60,9 +60,9 @@ export default function ProjectsSection() {
       demoUrl: "#",
       codeUrl: "#",
       tags: [
-        { name: "UX Design", color: "blue" },
-        { name: "React", color: "green" },
-        { name: "Express", color: "green" }
+        { name: "Figma", color: "green" },
+        { name: "UI Design", color: "green" },
+        { name: "Research", color: "blue" }
       ]
     },
     {
@@ -73,9 +73,9 @@ export default function ProjectsSection() {
       demoUrl: "#",
       codeUrl: "#",
       tags: [
-        { name: "UI/UX", color: "blue" },
-        { name: "Flutter", color: "orange" },
-        { name: "Firebase", color: "green" }
+       { name: "Figma", color: "green" },
+        { name: "UI Design", color: "green" },
+        { name: "Research", color: "blue" }
       ]
     },
     {
@@ -86,9 +86,9 @@ export default function ProjectsSection() {
       demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
       codeUrl: "#",
       tags: [
-        { name: "React", color: "green" },
-        { name: "GraphQL", color: "green" },
-        { name: "MongoDB", color: "green" }
+        { name: "Figma", color: "green" },
+        { name: "UI Design", color: "green" },
+        { name: "Research", color: "blue" }
       ]
     },
 
