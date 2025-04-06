@@ -27,7 +27,7 @@ export default function ProjectsSection() {
       ]
     },
     {
-      title: "Logic Tech Mouse Showcase",
+      title: "Logitech: Product Landing Page",
       description: "A comprehensive UI/UX design for a modern LogicTech Dashboard.",
       image: "https://i.postimg.cc/13FR1DCP/project-three-logic-tech.png",
       featured: true,
