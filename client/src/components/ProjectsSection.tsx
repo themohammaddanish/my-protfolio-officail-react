@@ -14,8 +14,8 @@ export default function ProjectsSection() {
       ]
     },
      {
-      title: "Website Analytic Web Design",
-      description: "A comprehensive UI/UX design for a modern web page with a focus on elegent design.",
+      title: "Productivity Platform Landing Page Concept",
+      description: "A landing page design concept for a productivity platform aimed at optimizing efficiency. ",
       image: "https://i.postimg.cc/NFfqs3sm/project-9.jpg",
       featured: true,
       demoUrl: "https://www.figma.com/proto/Wi1sm3c6aGS2VBNsraQ3rr/project-9?node-id=0-1&t=gMRLf9Rgec3LSIil-1",
