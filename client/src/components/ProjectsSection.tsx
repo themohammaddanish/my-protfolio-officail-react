@@ -94,7 +94,7 @@ export default function ProjectsSection() {
 
     {
       title: "Donut Twirl Twist – UI Visual Concept",
-      description: "A community platform for creative professionals with portfolio sharing and networking features.",
+      description: "This is a playful and engaging UI visual concept designed in Figma, centered around a fictional donut brand called “Donut Twirl Twist.”",
       image: "https://i.postimg.cc/NjQxk4Tm/1.jpg",
       featured: false,
       demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
