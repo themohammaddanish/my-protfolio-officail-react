@@ -92,19 +92,19 @@ export default function ProjectsSection() {
       ]
     },
 
-    // {
-    //   title: "Social Media Platform",
-    //   description: "A community platform for creative professionals with portfolio sharing and networking features.",
-    //   image: "https://i.postimg.cc/05mqQ9Gd/Mac-Book-Pro-16-1.png",
-    //   featured: false,
-    //   demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
-    //   codeUrl: "#",
-    //   tags: [
-    //     { name: "React", color: "green" },
-    //     { name: "GraphQL", color: "green" },
-    //     { name: "MongoDB", color: "green" }
-    //   ]
-    // },
+    {
+      title: "Social Media Platform",
+      description: "A community platform for creative professionals with portfolio sharing and networking features.",
+      image: "https://i.postimg.cc/NjQxk4Tm/1.jpg",
+      featured: false,
+      demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
+      codeUrl: "#",
+      tags: [
+        { name: "React", color: "green" },
+        { name: "GraphQL", color: "green" },
+        { name: "MongoDB", color: "green" }
+      ]
+    },
     // {
     //   title: "Social Media Platform",
     //   description: "A community platform for creative professionals with portfolio sharing and networking features.",
