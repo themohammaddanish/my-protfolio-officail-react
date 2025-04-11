@@ -97,12 +97,12 @@ export default function ProjectsSection() {
       description: "This is a playful and engaging UI visual concept designed in Figma.”",
       image: "https://i.postimg.cc/NjQxk4Tm/1.jpg",
       featured: false,
-      demoUrl: "https://www.figma.com/proto/UinAe4ydTBajSpPqP7Em47/project-7?node-id=0-1&t=uSPcAlCtBZeuJ8LX-1",
+      demoUrl: "https://www.figma.com/proto/QMnXiRT0tWxa9v0ORHNWIW/Project-8?page-id=0%3A1&node-id=2-79&t=lFbSuTRq9DFH0UYE-1",
       codeUrl: "#",
       tags: [
-        { name: "React", color: "green" },
-        { name: "GraphQL", color: "green" },
-        { name: "MongoDB", color: "green" }
+        { name: "Figma", color: "green" },
+        { name: "UI Design", color: "green" },
+        { name: "Research", color: "blue" }
       ]
     },
     // {
