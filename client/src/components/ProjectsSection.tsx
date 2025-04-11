@@ -93,7 +93,7 @@ export default function ProjectsSection() {
     },
 
     {
-      title: "Social Media Platform",
+      title: "Donut Twirl Twist – UI Visual Concept",
       description: "A community platform for creative professionals with portfolio sharing and networking features.",
       image: "https://i.postimg.cc/NjQxk4Tm/1.jpg",
       featured: false,
