@@ -267,7 +267,7 @@ export default function ProjectsSection() {
                   <option value="java">Java</option>
                   <option value="python">Python</option>
                   <option value="c-cpp">C/C++</option>
-                  <option value="web">Web Dev</option>
+                  <option value="web">Graphic Design</option>
                 </select>
                 <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-gray-500">
                   <i className="fas fa-chevron-down"></i>
@@ -311,7 +311,7 @@ export default function ProjectsSection() {
                 onClick={() => handleCategoryChange('web')} 
                 className={`px-5 py-2.5 rounded-full font-medium transition-all hover:shadow-md ${activeCategory === 'web' ? 'bg-primary text-white' : 'bg-white text-gray-700 hover:bg-gray-100 hover:shadow-sm'}`}
               >
-                Web Dev
+                Graphic Design
               </button>
             </div>
 
