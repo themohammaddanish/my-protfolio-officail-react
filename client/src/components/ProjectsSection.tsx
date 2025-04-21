@@ -36,7 +36,7 @@ export default function ProjectsSection() {
         { name: "UI Design", color: "blue" },
         { name: "Research", color: "green" }
       ],
-      category: 'ui-ux'
+      category: 'java'
     },
     {
       title: "Productivity Platform Landing Page Concept",
