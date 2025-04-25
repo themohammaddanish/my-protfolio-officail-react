@@ -23,7 +23,8 @@ export default function SkillsSection() {
     { name: "Adobe XD", icon: "fas fa-bezier-curve", color: "#FF26BE" },
     { name: "Git/GitHub", icon: "fab fa-github" },
     { name: "Tailwind CSS", icon: "fas fa-layer-group", color: "#38BDF8" },
-    { name: "Adobe Illustrator", icon: "fas fa-pen-nib", color: "#FF9A00" }
+    { name: "Adobe Illustrator", icon: "fas fa-pen-nib", color: "#FF9A00" },
+    {name: "Adobe Photoshop", icon: "fas fa-pen-nib", color: "#FF9A00" }
   ];
   
   const specialties = [
