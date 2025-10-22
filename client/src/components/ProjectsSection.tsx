@@ -26,7 +26,7 @@ export default function ProjectsSection() {
   const projects: Project[] = [
     {
       title: "School Management System",
-      description: "A modern school managemnet system  developed for the Jamia Islamia School, emphasizing a clean, modern aesthetic and a strong hierarchy.",
+      description: "A modern school managemnet system  developed for the Jamia Islamia School, emphasizing a clean, modern and a strong hierarchy.",
       image: "https://i.postimg.cc/rydBDKQK/Screenshot-2025-10-22-094300.png",
       featured: true,
       demoUrl: "https://jamia-backend-zygp.onrender.com/login",
