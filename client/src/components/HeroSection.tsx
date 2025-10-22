@@ -85,11 +85,11 @@ export default function HeroSection() {
               </div>
               
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-                UI/UX  & <span className="bg-gradient-to-r from-primary to-blue-400 text-transparent bg-clip-text">Logo Designer</span> with Programmer MindSet
+                Creative Technologist | Bridging Design and Code
               </h1>
               
               <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-xl leading-relaxed">
-                I design beautiful digital experiences that solve real-world problems and delight users.
+              Blending creativity and technology to turn design ideas into interactive, functional digital experiences.
               </p>
               
               {/* Tech stack animated section */}
