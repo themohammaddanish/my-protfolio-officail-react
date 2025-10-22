@@ -25,18 +25,18 @@ export default function ProjectsSection() {
 
   const projects: Project[] = [
     {
-      title: "Nike Air Max Landing Page Concept",
-      description: "A conceptual landing page design for the Nike Air Max, emphasizing a clean, modern aesthetic and a strong visual hierarchy.",
-      image: "https://i.postimg.cc/25Bkmh0r/project-5.png",
+      title: "School Management System",
+      description: "A modern school managemnet system  developed for the Jamia Islamia School, emphasizing a clean, modern aesthetic and a strong hierarchy.",
+      image: "https://i.postimg.cc/rydBDKQK/Screenshot-2025-10-22-094300.png",
       featured: true,
-      demoUrl: "https://www.figma.com/proto/JShx6o6SXtONgmj4jIWcvv/project-5?node-id=0-1&t=qIGpfOXHGX90NUJa-1",
+      demoUrl: "https://jamia-backend-zygp.onrender.com/login",
       codeUrl: "#",
       tags: [
-        { name: "Figma", color: "blue" },
-        { name: "UI Design", color: "blue" },
-        { name: "Research", color: "green" }
+        { name: "React.js", color: "blue" },
+        { name: "Express.js", color: "blue" },
+        { name: "MongDB", color: "green" }
       ],
-      category: 'ui-ux'
+      category: 'web'
     },
     {
       title: "Productivity Platform Landing Page Concept",
