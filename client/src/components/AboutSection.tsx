@@ -63,12 +63,6 @@ export default function AboutSection() {
               <div className="space-y-12 relative">
                 <div className="absolute left-[7px] top-2 bottom-2 w-px border-l-2 border-dotted border-black/10"></div>
                 <div className="relative pl-10">
-                  <div className="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-accent-blue ring-4 ring-white shadow-sm"></div>
-                  <span className="text-[10px] uppercase font-black text-accent-blue block mb-1">2026 - Current</span>
-                  <h4 className="text-lg font-black uppercase tracking-tight">Founder</h4>
-                  <p className="text-sm opacity-50 uppercase tracking-widest">ONEDESK PVT. LTD.</p>
-                </div>
-                <div className="relative pl-10">
                   <div className="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-neutral-200 ring-4 ring-white"></div>
                   <span className="text-[10px] uppercase font-black opacity-30 block mb-1">2023 - 2024</span>
                   <h4 className="text-lg font-black uppercase tracking-tight">Senior Designer</h4>
