@@ -18,12 +18,68 @@
   animation: float 3s ease-in-out infinite;
 }
 
+.project-card:hover .card-image {
+  filter: grayscale(0%);
+  box-shadow: 0 25px 50px -12px rgba(60, 131, 246, 0.1);
+}
+
+.card-image {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  filter: grayscale(100%);
+}
+
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #3c83f6;
+  transition: width 0.3s ease;
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+.input-minimal {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(0 0 0 / 0.1);
+  outline: none;
+  padding: 1.25rem 0;
+  font-size: 1.125rem;
+  transition: border-color 0.3s ease;
+}
+
+.input-minimal:focus {
+  border-bottom-color: #3c83f6;
+}
+
+@layer utilities {
+  .section-label {
+    @apply block text-xs font-medium uppercase tracking-[0.4em] text-black/40;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground;
+    @apply font-body antialiased bg-white text-[#0c0a09];
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
   }
 }

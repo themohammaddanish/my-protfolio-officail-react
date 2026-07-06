@@ -1,131 +1,80 @@
 export default function AboutSection() {
   return (
-    <section id="about" className="py-16 md:py-24 bg-gray-100">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
-            <div className="h-1 w-20 bg-primary mx-auto rounded-full"></div>
-            <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-              I'm a creative technologist who thrives at the intersection of design and Programming
+    <section id="about" className="px-6 py-16 md:px-16 lg:px-20 lg:py-20 bg-white border-t border-black/5">
+      <div className="max-w-7xl mx-auto">
+        <div className="mb-16 lg:mb-20">
+          <span className="text-xs uppercase tracking-[0.4em] opacity-40 font-black block mb-4">About Me</span>
+          <h2 className="text-5xl lg:text-7xl font-display font-black uppercase tracking-tighter">The Bridge.</h2>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
+          <div className="space-y-16">
+            <p className="text-2xl lg:text-3xl font-medium leading-relaxed">
+              I specialize in bridging the gap between{" "}
+              <span className="text-accent-blue">abstract design concepts</span> and high-performance production code. I
+              architect digital systems that resonate through technical precision and visual intentionality.
             </p>
-          </div>
-          <div className="flex flex-col md:flex-row gap-12 items-center">
-            <div className="md:w-1/3">
-              <div className="bg-white rounded-xl shadow-md overflow-hidden relative transform transition-transform duration-300 hover:scale-105">
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent mix-blend-overlay"></div>
-                <img 
-                  src="https://i.postimg.cc/287kS9MR/IMG-20241203-110545-864.webp" 
-                  alt="Profile image" 
-                  className="w-full h-auto object-cover"
-                />
-                <div className="p-6 relative z-10">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Md Danish Khan</h3>
-                  <p className="text-gray-600 mb-4">UI/UX Designer & Programmer</p>
-                  <div className="flex space-x-4">
-                    <a href="#" className="text-gray-600 hover:text-primary transition-colors transform hover:scale-110" aria-label="LinkedIn">
-                      <i className="fab fa-linkedin text-xl"></i>
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-primary transition-colors transform hover:scale-110" aria-label="GitHub">
-                      <i className="fab fa-github text-xl"></i>
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-primary transition-colors transform hover:scale-110" aria-label="Dribbble">
-                      <i className="fab fa-dribbble text-xl"></i>
-                    </a>
-                    <a href="#" className="text-gray-600 hover:text-primary transition-colors transform hover:scale-110" aria-label="Twitter">
-                      <i className="fab fa-twitter text-xl"></i>
-                    </a>
-                  </div>
-                </div>
+            <div className="grid grid-cols-3 gap-6 py-12 border-y border-black/5">
+              <div>
+                <span className="block text-3xl font-display font-black uppercase text-accent-blue">05+</span>
+                <span className="text-[10px] uppercase tracking-widest opacity-40 font-bold">Years Exp</span>
               </div>
-              
-              {/* Key facts cards */}
-              <div className="grid grid-cols-2 gap-4 mt-4">
-                <div className="bg-white p-4 rounded-lg shadow-sm text-center">
-                  <p className="text-3xl font-bold text-primary">3+</p>
-                  <p className="text-sm text-gray-600">Years Experience</p>
-                </div>
-                <div className="bg-white p-4 rounded-lg shadow-sm text-center">
-                  <p className="text-3xl font-bold text-primary">50+</p>
-                  <p className="text-sm text-gray-600">Projects Completed</p>
+              <div>
+                <span className="block text-3xl font-display font-black uppercase text-accent-blue">40+</span>
+                <span className="text-[10px] uppercase tracking-widest opacity-40 font-bold">Projects</span>
+              </div>
+              <div>
+                <span className="block text-3xl font-display font-black uppercase text-accent-blue">98%</span>
+                <span className="text-[10px] uppercase tracking-widest opacity-40 font-bold">Satisfaction</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div className="space-y-8">
+                <h3 className="text-xs uppercase tracking-[0.3em] font-black opacity-30">Expertise</h3>
+                <ul className="space-y-4 text-sm font-bold uppercase tracking-tight">
+                  {["UI/UX System Design", "Frontend Engineering", "Creative Coding", "Technical Strategy"].map((item) => (
+                    <li key={item} className="flex items-center gap-3">
+                      <div className="w-1.5 h-1.5 bg-accent-blue shrink-0"></div>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="space-y-8">
+                <h3 className="text-xs uppercase tracking-[0.3em] font-black opacity-30">Tech Stack</h3>
+                <div className="flex flex-wrap gap-2">
+                  {["React", "Next.js", "Tailwind", "TS", "Three.js"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1.5 bg-neutral-50 text-[10px] uppercase font-black tracking-widest border border-black/5"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>
-            
-            <div className="md:w-2/3">
-              <div className="bg-white rounded-xl shadow-sm p-6 mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4 flex items-center">
-                  <span className="w-8 h-8 rounded-full bg-blue-100 text-primary flex items-center justify-center mr-3">
-                    <i className="fas fa-user"></i>
-                  </span>
-                  Hello there!
-                </h3>
-                <p className="text-gray-700 mb-4">
-                  I'm a passionate UI/UX designer and Programmer with over 3 years of experience creating digital designs that users love. I specialize in designing intuitive interfaces and  solve real problems.
-                </p>
-                <p className="text-gray-700 mb-4">
-                  My journey began in visual design, but I quickly fell in love with the technical aspects of building digital products. This dual expertise allows me to bridge the gap between aesthetics and functionality, creating cohesive experiences from concept to code.
-                </p>
-                <p className="text-gray-700">
-                  I believe great design is about solving problems, not just making things look pretty. Every pixel, interaction, and line of code should serve a purpose in creating meaningful user experiences.
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div className="bg-white rounded-xl shadow-sm p-6">
-                  <h4 className="font-bold text-gray-900 mb-3 flex items-center">
-                    <span className="w-8 h-8 rounded-full bg-blue-100 text-primary flex items-center justify-center mr-2">
-                      <i className="fas fa-graduation-cap"></i>
-                    </span>
-                    Education
-                  </h4>
-                  <ul className="space-y-3">
-                    <li className="flex">
-                      <span className="text-primary mr-2">›</span>
-                      <div>
-                        <p className="font-medium">B.O. Information Technology</p>
-                        <p className="text-sm text-gray-600">Lincoln University, 2023-2027</p>
-                      </div>
-                    </li>
-                    <li className="flex">
-                      <span className="text-primary mr-2">›</span>
-                      <div>
-                        <p className="font-medium">UX and Designing</p>
-                        <p className="text-sm text-gray-600">Youtube</p>
-                      </div>
-                    </li>
-                  </ul>
+
+            <div className="pt-12 border-t border-black/5">
+              <h3 className="text-xs uppercase tracking-[0.3em] font-black opacity-30 mb-8">Experience</h3>
+              <div className="space-y-12 relative">
+                <div className="absolute left-[7px] top-2 bottom-2 w-px border-l-2 border-dotted border-black/10"></div>
+                <div className="relative pl-10">
+                  <div className="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-accent-blue ring-4 ring-white shadow-sm"></div>
+                  <span className="text-[10px] uppercase font-black text-accent-blue block mb-1">2022 - NOW</span>
+                  <h4 className="text-lg font-black uppercase tracking-tight">Senior Creative Dev</h4>
+                  <p className="text-sm opacity-50 uppercase tracking-widest">Freelance / Global</p>
                 </div>
-                <div className="bg-white rounded-xl shadow-sm p-6">
-                  <h4 className="font-bold text-gray-900 mb-3 flex items-center">
-                    <span className="w-8 h-8 rounded-full bg-blue-100 text-primary flex items-center justify-center mr-2">
-                      <i className="fas fa-briefcase"></i>
-                    </span>
-                    Experience
-                  </h4>
-                  <ul className="space-y-3">
-                    <li className="flex">
-                      <span className="text-primary mr-2">›</span>
-                      <div>
-                        <p className="font-medium">Senior Designer</p>
-                        <p className="text-sm text-gray-600">Damsole Tech., 2022-2023</p>
-                      </div>
-                    </li>
-                    <li className="flex">
-                      <span className="text-primary mr-2">›</span>
-                      <div>
-                        <p className="font-medium">Senior Designer</p>
-                        <p className="text-sm text-gray-600">Brandify Agency, 2023-2024</p>
-                      </div>
-                    </li>
-                  </ul>
+                <div className="relative pl-10">
+                  <div className="absolute left-0 top-1.5 w-4 h-4 rounded-full bg-neutral-200 ring-4 ring-white"></div>
+                  <span className="text-[10px] uppercase font-black opacity-30 block mb-1">2020 - 2022</span>
+                  <h4 className="text-lg font-black uppercase tracking-tight">Product Designer</h4>
+                  <p className="text-sm opacity-50 uppercase tracking-widest">TechStudio Asia</p>
                 </div>
               </div>
-              
-              <a href="#contact" className="inline-flex items-center px-4 py-2 bg-primary/10 text-primary font-medium rounded-lg hover:bg-primary/20 transition-colors">
-                Let's work together
-                <i className="fas fa-arrow-right ml-2"></i>
-              </a>
             </div>
           </div>
         </div>
