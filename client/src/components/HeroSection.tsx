@@ -5,7 +5,7 @@ export default function HeroSection() {
         <div className="space-y-6 sm:space-y-8 lg:space-y-12">
           <div>
             <span className="block text-xs uppercase tracking-[0.4em] mb-4 opacity-40 font-black">
-              Portfolio 2024 - 2025
+              Portfolio
             </span>
             <h1 className="text-[clamp(3.25rem,15vw,8rem)] lg:text-[8vw] font-display font-black uppercase leading-[0.95] tracking-[-0.05em] max-w-[10ch]">
               CREATIVE<br />

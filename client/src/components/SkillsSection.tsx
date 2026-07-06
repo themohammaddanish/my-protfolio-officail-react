@@ -45,7 +45,7 @@ export default function SkillsSection() {
       title: "UI/UX Design",
       description: "Creating intuitive and engaging user interfaces",
       icon: "fas fa-paint-brush",
-      color: "bg-blue-500"
+      color: "bg-primary"
     },
     {
       title: "Front-end Development",
@@ -95,7 +95,7 @@ export default function SkillsSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
             <div className="bg-white rounded-xl shadow-md p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
-                <span className="w-10 h-10 bg-blue-100 text-primary rounded-lg flex items-center justify-center mr-3">
+                  <span className="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center mr-3">
                   <i className="fas fa-paint-brush"></i>
                 </span>
                 UI/UX Design
@@ -109,7 +109,7 @@ export default function SkillsSection() {
                     </div>
                     <div className="relative h-2.5 w-full bg-gray-200 rounded-full overflow-hidden">
                       <div 
-                        className={`absolute top-0 left-0 h-full bg-gradient-to-r from-blue-400 to-primary rounded-full ${progressWidthClass[skill.percentage]}`}
+                        className={`absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-primary rounded-full ${progressWidthClass[skill.percentage]}`}
                       >
                         <div className="absolute inset-0 opacity-30 overflow-hidden">
                           <div className="w-full h-full bg-[radial-gradient(circle,_rgba(255,255,255,0.8)_0%,_transparent_70%)]"></div>
@@ -152,7 +152,7 @@ export default function SkillsSection() {
 
           <div className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-xl p-8 shadow-md">
             <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center">
-              <span className="w-10 h-10 bg-blue-100 text-primary rounded-lg flex items-center justify-center mr-3">
+              <span className="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center mr-3">
                 <i className="fas fa-toolbox"></i>
               </span>
               Tools & Technologies
@@ -161,10 +161,10 @@ export default function SkillsSection() {
               {tools.map((tool, index) => (
                 <div 
                   key={index} 
-                  className="bg-white rounded-lg p-4 text-center shadow-sm hover:shadow-md transition-all hover:bg-blue-50 transform hover:-translate-y-1"
+                  className="bg-white rounded-lg p-4 text-center shadow-sm hover:shadow-md transition-all hover:bg-primary/5 transform hover:-translate-y-1"
                 >
                   <div className="h-12 flex items-center justify-center mb-2">
-                    <i className={`${tool.icon} text-2xl ${toolColorClass[tool.color || ""] || "text-blue-600"}`}></i>
+                    <i className={`${tool.icon} text-2xl ${toolColorClass[tool.color || ""] || "text-primary"}`}></i>
                   </div>
                   <p className="text-sm font-medium text-gray-700">{tool.name}</p>
                 </div>

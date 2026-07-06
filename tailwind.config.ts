@@ -10,7 +10,7 @@ export default {
         body: ["Satoshi", "sans-serif"],
       },
       colors: {
-        "accent-blue": "#3c83f6",
+        "accent-blue": "#00B4D8",
         "accent-purple": "#a855f7",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
