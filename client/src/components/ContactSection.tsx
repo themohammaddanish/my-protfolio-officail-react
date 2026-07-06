@@ -52,6 +52,26 @@ export default function ContactSection() {
             <p className="text-xl text-neutral-500 max-w-sm leading-relaxed">
               Currently open to select freelance collaborations and technical consulting opportunities worldwide.
             </p>
+            <div className="space-y-6 pt-4">
+              <div>
+                <span className="block text-[10px] uppercase tracking-[0.3em] font-black opacity-30">Email</span>
+                <a
+                  href="mailto:mohameddaniss2@gmail.com"
+                  className="mt-2 inline-block text-lg font-black tracking-tight hover:text-accent-blue transition-colors"
+                >
+                  mohameddaniss2@gmail.com
+                </a>
+              </div>
+              <div>
+                <span className="block text-[10px] uppercase tracking-[0.3em] font-black opacity-30">Phone</span>
+                <a
+                  href="tel:+9779767384214"
+                  className="mt-2 inline-block text-lg font-black tracking-tight hover:text-accent-blue transition-colors"
+                >
+                  +977 9767384214
+                </a>
+              </div>
+            </div>
           </div>
 
           <div>
