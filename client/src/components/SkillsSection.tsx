@@ -6,6 +6,19 @@ export default function SkillsSection() {
     { name: "Responsive Design", percentage: 95 }
   ];
 
+  const progressWidthClass: Record<number, string> = {
+    95: "w-[95%]",
+    90: "w-[90%]",
+    85: "w-[85%]",
+    80: "w-[80%]",
+  };
+
+  const toolColorClass: Record<string, string> = {
+    "#FF26BE": "text-pink-500",
+    "#38BDF8": "text-sky-400",
+    "#FF9A00": "text-orange-500",
+  };
+
   const devSkills = [
     { name: "HTML/CSS/JavaScript", percentage: 95 },
     { name: "Python", percentage: 90 },
@@ -96,11 +109,10 @@ export default function SkillsSection() {
                     </div>
                     <div className="relative h-2.5 w-full bg-gray-200 rounded-full overflow-hidden">
                       <div 
-                        className="absolute top-0 left-0 h-full bg-gradient-to-r from-blue-400 to-primary rounded-full" 
-                        style={{ width: `${skill.percentage}%` }}
+                        className={`absolute top-0 left-0 h-full bg-gradient-to-r from-blue-400 to-primary rounded-full ${progressWidthClass[skill.percentage]}`}
                       >
-                        <div className="w-full h-full opacity-30 overflow-hidden">
-                          <div className="w-[500px] h-full bg-[radial-gradient(circle,_rgba(255,255,255,0.8)_0%,_transparent_70%)]"></div>
+                        <div className="absolute inset-0 opacity-30 overflow-hidden">
+                          <div className="w-full h-full bg-[radial-gradient(circle,_rgba(255,255,255,0.8)_0%,_transparent_70%)]"></div>
                         </div>
                       </div>
                     </div>
@@ -125,11 +137,10 @@ export default function SkillsSection() {
                     </div>
                     <div className="relative h-2.5 w-full bg-gray-200 rounded-full overflow-hidden">
                       <div 
-                        className="absolute top-0 left-0 h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full" 
-                        style={{ width: `${skill.percentage}%` }}
+                        className={`absolute top-0 left-0 h-full bg-gradient-to-r from-green-400 to-green-600 rounded-full ${progressWidthClass[skill.percentage]}`}
                       >
-                        <div className="w-full h-full opacity-30 overflow-hidden">
-                          <div className="w-[500px] h-full bg-[radial-gradient(circle,_rgba(255,255,255,0.8)_0%,_transparent_70%)]"></div>
+                        <div className="absolute inset-0 opacity-30 overflow-hidden">
+                          <div className="w-full h-full bg-[radial-gradient(circle,_rgba(255,255,255,0.8)_0%,_transparent_70%)]"></div>
                         </div>
                       </div>
                     </div>
@@ -153,7 +164,7 @@ export default function SkillsSection() {
                   className="bg-white rounded-lg p-4 text-center shadow-sm hover:shadow-md transition-all hover:bg-blue-50 transform hover:-translate-y-1"
                 >
                   <div className="h-12 flex items-center justify-center mb-2">
-                    <i className={`${tool.icon} text-2xl`} style={{ color: tool.color || '#2563eb' }}></i>
+                    <i className={`${tool.icon} text-2xl ${toolColorClass[tool.color || ""] || "text-blue-600"}`}></i>
                   </div>
                   <p className="text-sm font-medium text-gray-700">{tool.name}</p>
                 </div>

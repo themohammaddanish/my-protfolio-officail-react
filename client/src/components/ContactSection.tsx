@@ -36,37 +36,37 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="px-6 py-16 md:px-16 lg:px-20 lg:py-20 bg-white border-t border-black/5">
+    <section id="contact" className="px-4 py-14 sm:px-6 md:px-16 lg:px-20 lg:py-20 bg-white border-t border-black/5 scroll-mt-24">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
-          <div className="space-y-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+          <div className="space-y-10 lg:space-y-12">
             <div>
               <span className="block text-xs uppercase tracking-[0.4em] mb-4 opacity-40 font-black">
                 Availability / 2026
               </span>
-              <h2 className="text-6xl lg:text-8xl font-display font-black uppercase tracking-tighter">
+              <h2 className="text-4xl sm:text-5xl lg:text-8xl font-display font-black uppercase tracking-tighter">
                 LET'S<br />
                 <span className="text-accent-blue">CONNECT</span>
               </h2>
             </div>
-            <p className="text-xl text-neutral-500 max-w-sm leading-relaxed">
+            <p className="text-base sm:text-lg text-neutral-500 max-w-sm leading-relaxed">
               Currently open to select freelance collaborations and technical consulting opportunities worldwide.
             </p>
             <div className="space-y-6 pt-4">
               <div>
                 <span className="block text-[10px] uppercase tracking-[0.3em] font-black opacity-30">Email</span>
                 <a
-                  href="mailto:mohameddaniss2@gmail.com"
-                  className="mt-2 inline-block text-lg font-black tracking-tight hover:text-accent-blue transition-colors"
+                  href="mailto:danishbrtnp@gmail.com"
+                  className="mt-2 inline-block text-base sm:text-lg font-black tracking-tight hover:text-accent-blue transition-colors break-all"
                 >
-                  mohameddaniss2@gmail.com
+                  danishbrtnp@gmail.com
                 </a>
               </div>
               <div>
                 <span className="block text-[10px] uppercase tracking-[0.3em] font-black opacity-30">Phone</span>
                 <a
                   href="tel:+9779767384214"
-                  className="mt-2 inline-block text-lg font-black tracking-tight hover:text-accent-blue transition-colors"
+                  className="mt-2 inline-block text-base sm:text-lg font-black tracking-tight hover:text-accent-blue transition-colors"
                 >
                   +977 9767384214
                 </a>
@@ -82,7 +82,7 @@ export default function ContactSection() {
                 <p className="text-white/60 text-sm">Thank you for reaching out. I'll get back to you soon.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-12">
+              <form onSubmit={handleSubmit} className="space-y-10 lg:space-y-12">
                 <div className="group">
                   <label className="text-[10px] uppercase tracking-widest font-black opacity-30 group-focus-within:opacity-100 transition-opacity">
                     01 / Full Name
@@ -115,7 +115,7 @@ export default function ContactSection() {
                   <label className="text-[10px] uppercase tracking-widest font-black opacity-30 block">
                     03 / Project Type
                   </label>
-                  <div className="flex flex-wrap gap-4">
+                  <div className="flex flex-wrap gap-3 sm:gap-4">
                     {["UI/UX Design", "Development", "Consulting"].map((type) => (
                       <label key={type} className="cursor-pointer">
                         <input
@@ -126,7 +126,7 @@ export default function ContactSection() {
                           onChange={handleChange}
                           className="peer hidden"
                         />
-                        <span className="px-6 py-3 border border-black/5 rounded-full text-[10px] font-black uppercase tracking-widest peer-checked:bg-accent-blue peer-checked:text-white transition-all block">
+                        <span className="px-4 sm:px-6 py-2.5 sm:py-3 border border-black/5 rounded-full text-[10px] font-black uppercase tracking-widest peer-checked:bg-accent-blue peer-checked:text-white transition-all block">
                           {type}
                         </span>
                       </label>
@@ -149,7 +149,7 @@ export default function ContactSection() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full lg:w-auto bg-black text-white px-16 py-6 text-[10px] font-black uppercase tracking-[0.3em] hover:bg-accent-blue transition-colors duration-500 disabled:opacity-50"
+                  className="w-full lg:w-auto bg-black text-white px-10 sm:px-16 py-5 sm:py-6 text-[10px] font-black uppercase tracking-[0.3em] hover:bg-accent-blue transition-colors duration-500 disabled:opacity-50"
                 >
                   {isSubmitting ? "Sending..." : "Send Inquiry"}
                 </button>

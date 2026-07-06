@@ -31,18 +31,18 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="work" className="px-6 py-16 md:px-16 lg:px-20 lg:py-20 bg-neutral-50/20 border-t border-black/5">
+    <section id="work" className="px-4 py-14 sm:px-6 md:px-16 lg:px-20 lg:py-20 bg-neutral-50/20 border-t border-black/5 scroll-mt-24">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between md:items-end mb-20 lg:mb-24 gap-8">
+        <div className="flex flex-col md:flex-row justify-between md:items-end mb-14 lg:mb-24 gap-6 sm:gap-8">
           <div>
-            <h2 className="text-6xl lg:text-9xl font-display font-black uppercase tracking-tighter">
+            <h2 className="text-4xl sm:text-5xl lg:text-9xl font-display font-black uppercase tracking-tighter">
               WORK<span className="text-accent-blue">.</span>
             </h2>
           </div>
           <span className="text-xs uppercase tracking-[0.4em] opacity-30 font-black md:mb-4">Archive 24/25</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 gap-y-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16 gap-y-16 lg:gap-y-24">
           {projects.map((project, index) => (
             <a
               key={project.title}
@@ -51,11 +51,11 @@ export default function ProjectsSection() {
               rel={project.url === "#" ? undefined : "noopener noreferrer"}
               className={`project-card group block ${index % 2 === 1 ? "md:mt-16" : ""}`}
             >
-              <div className="relative aspect-[16/10] overflow-hidden bg-neutral-200 mb-8">
+              <div className="relative aspect-[16/10] overflow-hidden bg-neutral-200 mb-6 sm:mb-8">
                 <img src={project.image} alt={project.title} className="w-full h-full object-cover card-image" />
               </div>
               <div className="space-y-4">
-                <h3 className="text-3xl font-display font-black uppercase tracking-tight group-hover:text-accent-blue transition-colors">
+                <h3 className="text-2xl sm:text-3xl font-display font-black uppercase tracking-tight group-hover:text-accent-blue transition-colors">
                   {project.title}
                 </h3>
                 <p className="text-neutral-500 leading-relaxed">{project.description}</p>

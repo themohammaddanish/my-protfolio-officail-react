@@ -1,18 +1,18 @@
 export default function HeroSection() {
   return (
-    <section id="home" className="min-h-screen flex items-center p-8 md:p-16 lg:p-20">
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-        <div className="space-y-8 lg:space-y-12">
+    <section id="home" className="min-h-screen flex items-center px-4 py-10 sm:px-6 md:px-12 lg:px-20 lg:py-20 scroll-mt-24">
+      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
+        <div className="space-y-6 sm:space-y-8 lg:space-y-12">
           <div>
             <span className="block text-xs uppercase tracking-[0.4em] mb-4 opacity-40 font-black">
               Portfolio 2024 - 2025
             </span>
-            <h1 className="text-[15vw] lg:text-[8vw] font-display font-black uppercase leading-[0.95] tracking-[-0.05em]">
+            <h1 className="text-[clamp(3.25rem,15vw,8rem)] lg:text-[8vw] font-display font-black uppercase leading-[0.95] tracking-[-0.05em] max-w-[10ch]">
               CREATIVE<br />
               <span className="text-accent-blue">TECH</span>
             </h1>
           </div>
-          <p className="text-xl md:text-2xl text-neutral-500 max-w-lg leading-relaxed">
+          <p className="text-base sm:text-lg md:text-2xl text-neutral-500 max-w-lg leading-relaxed">
             Architecting high-performance digital systems at the intersection of aesthetic design and complex frontend
             engineering.
           </p>
@@ -21,8 +21,8 @@ export default function HeroSection() {
             <span className="text-xs uppercase font-black tracking-widest opacity-60">Available for new projects</span>
           </div>
         </div>
-        <div className="relative">
-          <div className="aspect-[4/5] bg-neutral-100 overflow-hidden shadow-sm group">
+        <div className="relative w-full max-w-[20rem] sm:max-w-[24rem] md:max-w-[28rem] lg:max-w-[34rem] mx-auto lg:mx-0 lg:justify-self-end">
+          <div className="aspect-[4/5] w-full max-h-[70vh] bg-neutral-100 overflow-hidden shadow-sm group">
             <img
               src="/dan.png"
               alt="Danish Khan"
