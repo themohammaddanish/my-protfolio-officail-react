@@ -29,8 +29,8 @@ export default function HeroSection() {
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
             />
           </div>
-          <div className="absolute -bottom-6 -right-6 w-20 h-20 bg-accent-blue hidden md:flex items-center justify-center text-white shadow-xl">
-            <iconify-icon icon="lucide:arrow-down-right" class="text-4xl"></iconify-icon>
+          <div className="absolute -bottom-3 -right-3 w-14 h-14 md:-bottom-6 md:-right-6 md:w-20 md:h-20 bg-accent-blue flex items-center justify-center text-white shadow-xl">
+            <iconify-icon icon="lucide:arrow-down-right" class="text-2xl md:text-4xl"></iconify-icon>
           </div>
         </div>
       </div>
