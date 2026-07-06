@@ -10,7 +10,7 @@ export default function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32">
           <div className="space-y-16">
             <p className="text-2xl lg:text-3xl font-medium leading-relaxed">
-              I'm a UI/UX designer and programmer who bridges the gap between{" "}
+              I'm Md Danish Khan, a UI/UX designer and programmer bridging the gap between{" "}
               <span className="text-accent-blue">abstract design concepts</span> and high-performance production code. I
               design intuitive interfaces and build purposeful digital products from concept to code.
             </p>
@@ -59,20 +59,6 @@ export default function AboutSection() {
             </div>
 
             <div className="pt-12 border-t border-black/5">
-              <h3 className="text-xs uppercase tracking-[0.3em] font-black opacity-30 mb-8">Education</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
-                <div>
-                  <span className="text-[10px] uppercase font-black text-accent-blue block mb-1">2023 - 2027</span>
-                  <h4 className="text-lg font-black uppercase tracking-tight">B.O. Information Technology</h4>
-                  <p className="text-sm opacity-50 uppercase tracking-widest">Lincoln University</p>
-                </div>
-                <div>
-                  <span className="text-[10px] uppercase font-black text-accent-blue block mb-1">Self-Led</span>
-                  <h4 className="text-lg font-black uppercase tracking-tight">UX and Designing</h4>
-                  <p className="text-sm opacity-50 uppercase tracking-widest">YouTube</p>
-                </div>
-              </div>
-
               <h3 className="text-xs uppercase tracking-[0.3em] font-black opacity-30 mb-8">Experience</h3>
               <div className="space-y-12 relative">
                 <div className="absolute left-[7px] top-2 bottom-2 w-px border-l-2 border-dotted border-black/10"></div>
