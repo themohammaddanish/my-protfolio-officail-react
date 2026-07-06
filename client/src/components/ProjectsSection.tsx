@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const projects = [
   {
     title: "School Management System",
@@ -5,6 +7,14 @@ const projects = [
     image: "https://i.postimg.cc/rydBDKQK/Screenshot-2025-10-22-094300.png",
     url: "https://jamia-backend-zygp.onrender.com/login",
     tags: ["React", "Express.js", "MongoDB"],
+  },
+  {
+    title: "THE GYM NEPAL",
+    description:
+      "Complete MERN ecosystem featuring a marketing website, equipment store, and powerful admin dashboard.",
+    image: "/the%20gym.png",
+    url: "#",
+    tags: ["MERN STACK", "ECOMMERCE", "CMS"],
   },
   {
     title: "Productivity Platform",
@@ -30,6 +40,9 @@ const projects = [
 ];
 
 export default function ProjectsSection() {
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? projects : projects.slice(0, 4);
+
   return (
     <section id="work" className="px-4 py-14 sm:px-6 md:px-16 lg:px-20 lg:py-20 bg-neutral-50/20 border-t border-black/5 scroll-mt-24">
       <div className="max-w-7xl mx-auto">
@@ -43,7 +56,7 @@ export default function ProjectsSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16 gap-y-16 lg:gap-y-24">
-          {projects.map((project, index) => (
+          {visibleProjects.map((project, index) => (
             <a
               key={project.title}
               href={project.url}
@@ -73,6 +86,18 @@ export default function ProjectsSection() {
             </a>
           ))}
         </div>
+
+        {projects.length > 4 && (
+          <div className="mt-12 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setShowAll((current) => !current)}
+              className="px-6 py-3 text-xs font-black uppercase tracking-[0.35em] border border-black/10 hover:border-black/30 hover:bg-black/5 transition-colors"
+            >
+              {showAll ? "Show Less" : "View All"}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
