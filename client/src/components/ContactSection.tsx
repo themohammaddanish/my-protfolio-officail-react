@@ -4,6 +4,7 @@ export default function ContactSection() {
   const [formData, setFormData] = useState({ name: "", email: "", type: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [confirmationMessage, setConfirmationMessage] = useState("");
   const [submitError, setSubmitError] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -16,6 +17,7 @@ export default function ContactSection() {
 
     setIsSubmitting(true);
     setSubmitError("");
+    setConfirmationMessage("");
 
     try {
       const response = await fetch("/api/contact", {
@@ -30,6 +32,12 @@ export default function ContactSection() {
 
       if (!response.ok) {
         throw new Error(payload.message || "Failed to send message");
+      }
+
+      if (payload.confirmationSent) {
+        setConfirmationMessage("Your message was sent and a confirmation email was delivered to your inbox.");
+      } else {
+        setConfirmationMessage("Your message was sent, but the confirmation email could not be delivered.");
       }
 
       setIsSubmitted(true);
@@ -87,6 +95,9 @@ export default function ContactSection() {
                 <iconify-icon icon="lucide:check-circle" class="text-2xl text-accent-blue mb-3 block"></iconify-icon>
                 <h3 className="text-lg font-black uppercase tracking-tight mb-2">Message Sent!</h3>
                 <p className="text-white/60 text-sm">Thank you for reaching out. I'll get back to you soon.</p>
+                {confirmationMessage ? (
+                  <p className="mt-3 text-sm text-white/80 leading-relaxed">{confirmationMessage}</p>
+                ) : null}
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-10 lg:space-y-12">

@@ -31,7 +31,6 @@ The following technologies were used to build the website:
   - **React** - A JavaScript library for building user interfaces.
   - **Tailwind CSS** - A utility-first CSS framework.
   - **Vite** - A fast build tool for modern web development.
-  
 - **Tools & Libraries:**
   - **Figma** - Used for the design and prototyping of UI components.
   - **Git/GitHub** - Version control and project management.
@@ -41,7 +40,7 @@ The following technologies were used to build the website:
 
 - **Design Tools:**
   - **Adobe XD** and **Figma** for designing UI/UX elements.
-  
+
 ---
 
 ## Setup Instructions
@@ -63,12 +62,13 @@ Set these environment variables before starting the app:
 
 - `SMTP_HOST`
 - `SMTP_PORT`
+- `SMTP_SECURE`
 - `SMTP_USER`
 - `SMTP_PASS`
-- `CONTACT_FROM_EMAIL`
-- `CONTACT_TO_EMAIL`
+- `MAIL_FROM`
+- `ADMIN_EMAIL`
 
-For local development, put them in a `.env` file at the project root.
+For local development, copy `.env.example` to `.env` at the project root and fill in your values.
 
 ### Clone the Repository
 
@@ -76,3 +76,4 @@ For local development, put them in a `.env` file at the project root.
 
    ```bash
    git clone https://github.com/your-username/your-portfolio.git
+   ```

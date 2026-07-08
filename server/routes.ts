@@ -2,7 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import nodemailer from "nodemailer";
 import { contactFormSchema } from "../shared/schema";
-import { storage } from "./storage";
+import { buildContactConfirmationEmail, buildContactNotificationEmail } from "./emailTemplates";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // put application routes here
@@ -23,10 +23,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
     const smtpHost = process.env.SMTP_HOST;
     const smtpPort = Number(process.env.SMTP_PORT ?? 587);
     const smtpUser = process.env.SMTP_USER;
-    const smtpPass = process.env.SMTP_PASS;
+    const smtpPass = (process.env.SMTP_PASS ?? "").replace(/\s+/g, "");
     const smtpSecure = process.env.SMTP_SECURE === "true";
-    const fromAddress = process.env.CONTACT_FROM_EMAIL || smtpUser;
-    const toAddress = process.env.CONTACT_TO_EMAIL || smtpUser;
+    const fromAddress = process.env.MAIL_FROM || process.env.CONTACT_FROM_EMAIL || smtpUser;
+    const toAddress = process.env.ADMIN_EMAIL || process.env.CONTACT_TO_EMAIL || smtpUser;
 
     if (!smtpHost || !smtpUser || !smtpPass || !fromAddress || !toAddress) {
       return res.status(500).json({
@@ -39,6 +39,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
       host: smtpHost,
       port: smtpPort,
       secure: smtpSecure,
+      pool: true,
+      maxConnections: 1,
+      maxMessages: 20,
       auth: {
         user: smtpUser,
         pass: smtpPass,
@@ -47,32 +50,60 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
     const { name, email, type, message } = parsed.data;
     const projectType = type || "Not specified";
-
-    await transporter.sendMail({
-      from: `Portfolio Contact Form <${fromAddress}>`,
-      to: toAddress,
-      replyTo: email,
-      subject: `New contact inquiry from ${name}`,
-      text: [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        `Project Type: ${projectType}`,
-        "",
-        message,
-      ].join("\n"),
-      html: `
-        <div style="font-family: Arial, sans-serif; line-height: 1.5; color: #111827;">
-          <h2 style="margin: 0 0 12px;">New contact inquiry</h2>
-          <p><strong>Name:</strong> ${name}</p>
-          <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Project Type:</strong> ${projectType}</p>
-          <p><strong>Message:</strong></p>
-          <p style="white-space: pre-wrap;">${message}</p>
-        </div>
-      `,
+    const notificationEmail = buildContactNotificationEmail({
+      name,
+      email,
+      projectType,
+      message,
+    });
+    const confirmationEmail = buildContactConfirmationEmail({
+      name,
+      email,
+      projectType,
+      message,
     });
 
-    return res.json({ message: "Message sent successfully" });
+    try {
+      const [notificationResult, confirmationResult] = await Promise.allSettled([
+        transporter.sendMail({
+          from: `Portfolio Contact Form <${fromAddress}>`,
+          to: toAddress,
+          replyTo: email,
+          subject: notificationEmail.subject,
+          text: notificationEmail.text,
+          html: notificationEmail.html,
+          attachments: notificationEmail.attachments,
+        }),
+        transporter.sendMail({
+          from: `Portfolio Contact Form <${fromAddress}>`,
+          to: email,
+          subject: confirmationEmail.subject,
+          text: confirmationEmail.text,
+          html: confirmationEmail.html,
+          attachments: confirmationEmail.attachments,
+        }),
+      ]);
+
+      if (notificationResult.status === "rejected") {
+        throw notificationResult.reason;
+      }
+
+      if (confirmationResult.status === "rejected") {
+        console.error("Contact confirmation email failed:", confirmationResult.reason);
+      }
+
+      return res.json({
+        message: "Message sent successfully",
+        messageId: notificationResult.value.messageId,
+        confirmationSent: confirmationResult.status === "fulfilled",
+      });
+    } catch (error) {
+      console.error("Contact form email failed:", error);
+      return res.status(500).json({
+        message:
+          error instanceof Error ? error.message : "Failed to send contact email",
+      });
+    }
   });
 
   const httpServer = createServer(app);
