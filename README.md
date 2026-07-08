@@ -55,6 +55,21 @@ Before starting, ensure you have the following installed:
 - **Node.js** - Download from [Node.js Official](https://nodejs.org/)
 - **npm** (comes with Node.js) or **Yarn** for package management.
 
+### Contact Form Email Setup
+
+The contact form sends mail through your own SMTP server using Nodemailer.
+
+Set these environment variables before starting the app:
+
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_USER`
+- `SMTP_PASS`
+- `CONTACT_FROM_EMAIL`
+- `CONTACT_TO_EMAIL`
+
+For local development, put them in a `.env` file at the project root.
+
 ### Clone the Repository
 
 1. Clone this repository using Git:

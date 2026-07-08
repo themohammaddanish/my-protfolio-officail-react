@@ -1,38 +1,45 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({ name: "", email: "", type: "", message: "" });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) return;
 
     setIsSubmitting(true);
-    emailjs
-      .send(
-        "service_6fbufq8",
-        "template_ntlufxn",
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: `Project Type: ${formData.type || "Not specified"}\n\n${formData.message}`,
+    setSubmitError("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        "mhtzaCOyoCfjB72N8",
-      )
-      .then(() => {
-        setIsSubmitting(false);
-        setIsSubmitted(true);
-        setFormData({ name: "", email: "", type: "", message: "" });
-        setTimeout(() => setIsSubmitted(false), 3000);
-      })
-      .catch(() => setIsSubmitting(false));
+        body: JSON.stringify(formData),
+      });
+
+      const payload = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(payload.message || "Failed to send message");
+      }
+
+      setIsSubmitted(true);
+      setFormData({ name: "", email: "", type: "", message: "" });
+      setTimeout(() => setIsSubmitted(false), 3000);
+    } catch (error) {
+      setSubmitError(error instanceof Error ? error.message : "Failed to send message");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -146,6 +153,11 @@ export default function ContactSection() {
                     required
                   />
                 </div>
+                {submitError ? (
+                  <p className="text-sm font-medium text-red-600" role="alert">
+                    {submitError}
+                  </p>
+                ) : null}
                 <button
                   type="submit"
                   disabled={isSubmitting}
